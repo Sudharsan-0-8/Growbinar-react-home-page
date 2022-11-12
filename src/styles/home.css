@@ -4,76 +4,59 @@
 */
 
 .home {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  height: 95vh;
-  /* background-color: rgb(164, 157, 255, 0.3); */
 }
 
-.home_header {
-  flex: 0.8;
+.home_body {
+  flex: 1;
+  padding-left: 10vw;
+}
+
+.home_body > .hero-text {
+  z-index: 999;
+  width: 35vw;
+  font-size: 40px;
+  margin-top: 13vh;
+}
+
+.home_body > .circle {
+  z-index: -99;
+  position: absolute;
+  left: 5vw;
+  margin-top: 5vh;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  background-color: #6d60fe8a;
+}
+
+.home_body > .sub-hero-text {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  /* padding-top: 10px; */
+  margin-top: 5vh;
+  width: 30vw;
 }
 
-.home_header > .header_left {
-  flex: 1;
-  text-align: center;
-  /* border: black solid 2px; */
+.home_body > .sub-hero-text > span {
+  font-size: 20px;
 }
-.home_header > .header_left {
+
+.home_body > .bottom {
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding: auto;
-  font-size: 32px;
+  justify-content: space-between;
+  margin-top: 5vh;
+  width: 30vw;
 }
 
-.home_header > ul {
-  flex: 3;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style-type: none;
-  /* border: black solid 2px; */
-}
-
-.home_header > ul > li {
-  /* margin-right: 10px; */
-  padding-top: 35px;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.home_header > ul > li > a > hr {
-  background-color: #6c60fe;
-  height: 2px;
-  width: 0;
-  transition: width 0.5s;
-}
-
-.home_header > ul > li > a:hover > hr {
-  width: 100%;
-}
-
-.home_header > .header_right {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* border: black solid 2px; */
-}
-
-.home_header > .header_right > button {
+.home_body > .bottom > button {
   color: white;
   font-size: 15px;
   height: 45px;
   padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   border-radius: 10px;
   border: none;
   background-color: #6c60fe;
@@ -81,15 +64,15 @@
   box-shadow: rgba(0, 0, 0, 0.445) 2px 2px 2px 2px;
 }
 
-.home_body {
-  flex: 4;
-}
-
-.home_footer {
-  flex: 1;
-}
-
-/* 
-.home_header > header_right {
+.home_body > .bottom > span {
   display: flex;
-} */
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.home_body > .bottom > span > .material-symbols-outlined {
+  font-size: 30px;
+  cursor: pointer;
+  /* margin-top: 10px; */
+}

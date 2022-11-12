@@ -5,49 +5,27 @@ import '../styles/home.css';
 function Home() {
   return (
     <div className="home">
-      <div className="home_header">
-        <div className="header_left">
-          <div className="logo">
-            <strong>
-              <span style={{ color: '#6c60fe' }}>Grow</span>binar.
-            </strong>
-          </div>
+      <div className="home_body">
+        <div className="circle"></div>
+        <div className="hero-text">
+          Learn from world class mentors with us AnyTime, Anywhere
         </div>
-
-        <ul className="">
-          <li>
-            <a>
-              <strong>Home</strong>
-              <hr />
-            </a>
-          </li>
-          <li>
-            <a>
-              <strong>Features</strong>
-              <hr />
-            </a>
-          </li>
-          <li>
-            <a>
-              <strong>Contact</strong>
-              <hr />
-            </a>
-          </li>
-          <li>
-            <a>
-              <strong>About Us</strong>
-              <hr />
-            </a>
-          </li>
-        </ul>
-
-        <div className="header_right">
-          <button>Get Started</button>
+        <div className="sub-hero-text">
+          <img src="" alt="img" className="sub-hero-image"></img>
+          <span>
+            Open a gate for Knowledge
+            <br />
+            We are just a click away!
+          </span>
+        </div>
+        <div className="bottom">
+          <button>Book a session</button>
+          <span>
+            <span className="material-symbols-outlined">play_circle</span>
+            <span> play video </span>
+          </span>
         </div>
       </div>
-
-      <div className="home_body"></div>
-
       <div className="footer"></div>
     </div>
   );
