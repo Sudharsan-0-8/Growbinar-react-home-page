@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { AiFillInstagram, AiFillMail } from 'react-icons/ai';
+import { IoLogoWhatsapp } from 'react-icons/io';
+
 import '../styles/home.css';
 
 function Home() {
@@ -24,6 +27,13 @@ function Home() {
             <span className="material-symbols-outlined">play_circle</span>
             <span> play video </span>
           </span>
+        </div>
+        <div className="body_footer">
+          <div>
+            <AiFillInstagram className="icons" />
+            <IoLogoWhatsapp className="icons" />
+            <AiFillMail className="icons" />
+          </div>
         </div>
       </div>
       <div className="footer"></div>

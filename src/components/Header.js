@@ -8,7 +8,7 @@ function Header() {
     <div className="home_header">
       <div className="header_left">
         <div className="logo">
-          <img src={require('./assets/logo.jpg')} />
+          {/* <img src={require('./assets/logo.jpg')} /> */}
           <strong>
             <span style={{ color: '#6c60fe' }}>Grow</span>binar.
           </strong>
